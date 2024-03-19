@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | Body Mass Index Calculator</title>
+  <link href="./output.css" rel="stylesheet">
+</head>
+
+<body class="bg-white font-inter flex flex-col h-screen w-screen">
+  <div class="flex flex-row w-screen">
+    <div class="border border-none h-[710px] w-[1000px] p-4 rounded-b-3xl relative shadow-sm bg-gradient-to-tl from-[#D6E6FE] from-0% to-rgba(214, 252, 254, 0.00) to-100% ml-6">
+        <img src="./logo.svg" class="w-[40px] h-[40px] mt-12">
+        <p class="text-left font-inter text-[50px] text-[253347] mt-32 font-bold w-1/2">
+          Body Mass Index Calculator
+        </p>
+        <p class="text-left font-inter text-[18px] text-[#5E6E85] font-light w-1/2 mt-3">
+          Better understand your weight in relation to your height using our body mass index (BM) calculator. While BMI is not the sole determinant of a healthy weight, it offers a valuable starting point to evaluate your overall health and well-being.
+        </p>
+    </div>
+    <div class="flex flex-col border border-none h-[500px] w-[570px] p-8 mx-6 rounded-2xl absolute shadow-lg bg-white top-[140px] left-[748px] m-0 h-auto">
+      <p class="text-left font-inter text-[28px] text-black font-bold ">
+        Enter your details below
+      </p>
+      <div class="flex justify-start grid grid-cols-2 gap-6">
+        <div class="flex gap-[18px] mt-5 mr-20">
+          <img src="radio-button-fill.svg" class="w-[30px] h-[30px]">
+          <label for="metric" class="font-inter font-black text-[15px] text-black ">
+            Metric
+          </label>
+        </div>
+        <div class="flex gap-[18px] mt-5">
+          <img src="radio-button.svg" class="w-[30px] h-[30px]">
+          <label for="imperial" class="font-inter font-black text-[15px] text-black">
+            Imperial
+          </label>
+        </div>
+      </div>
+      <div class="grid grid-cols-2 mt-10 z-10 gap-6">
+        <div>
+          <p class="font-inter text-[14px] font-normal text-[#5E6E85] mt-5">
+            Height
+          </p>
+          <div class="flex border border-[#D8E2E7] rounded-xl mt-2 py-4 px-5 w-[240px] hover:border-[#345FF6] ">
+            <input placeholder="0" class="font-bold text-black text-[28px] w-full justify-center items-center">
+            <p class="justify-center items-center font-bold text-[#345FF6] text-[28px]">
+              cm
+            </p>
+          </div>
+        </div>
+        <div>
+          <p class="font-inter text-[14px] font-normal text-[#5E6E85] mt-5 ">
+            Weight
+          </p>
+          <div class="flex border border-[#D8E2E7] rounded-xl mt-2 py-4 px-5 w-full hover:border-[#345FF6]">
+            <input placeholder="0" class="font-bold text-black text-[28px] w-full mr-6">
+            <p class="justify-center items-center font-bold text-[#345FF6] text-[28px]">
+              kg
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="border relative rounded-r-[285px] bg-gradient-to-r from-[#345FF6] p-4 to-[#587DFF] w-full h-[127px] mt-10 text-white">
+        <p class="font-inter font-bold text-[25px] mt-2">
+          Welcome!
+        </p>
+        <p class="mt-3 text-[15px]">
+          Enter your height and weight and you’ll see your BMI result here
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="border border-none w-screen mt-20 flex flex-row mb-48">
+    <img class="h-[50px] w-[50px] ml-12" src="image-man-eating.webp">
+    <div class="font-inter text-black font-[50px] font-bold ml-auto">
+      What your BMI result means      
+    </div>
+  </div>
+  
+</body>
+</html>
